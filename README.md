@@ -9,12 +9,21 @@ The data in mmMultiDataset is stored in point cloud format, with each action pre
 The release of this dataset fills a critical gap in HAR systems concerning the recognition of independent and interactive activities among multiple users, providing an indispensable resource for enhancing the robustness and accuracy of activity recognition using mmWave radar. With the widespread application of mmMultiDataset, we anticipate that HAR technology will achieve more precise and efficient applications and developments across various fields.
 
 The naming format for dataset samples is as follows:
-- Single-user actions:
+Single-user actions:
 - $P_{i}-action-cnt.npz$
-- Multi-user independent actions:
+Multi-user independent actions:
 - $P_{i}^1,P_{i}^2-action1,action2-cnt.npz$
-- Multi-user interaction actions:
+Multi-user interaction actions:
 - $P_{i}^1,P_{i}^2-action-cnt.npz$
 
 
 Each dataset consists of point cloud data and includes the following features:
+| **Feature**     | **Description**                                                                                                                                            |
+| :-------------: | :--------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| rangeIdx        | Index corresponding to the range bin of the detected object. It indicates the distance of the  object from the radar.                                      |
+| dopplerIdx      | Index corresponding to the Doppler bin, which represents the relative velocity of the detected object.                                                     |
+| peakVal         | The peak value of the detected signal, indicating the strength of the returned radar signal.                                                               |
+| x\_coord        | The x-coordinate of the detected object in the radar's coordinate system.                                                                                  |
+| y\_coord        | The y-coordinate of the detected object in the radar's coordinate system.                                                                                  |
+| z\_coord        | The z-coordinate of the detected object in the radar's coordinate system.                                                                                  |
+
