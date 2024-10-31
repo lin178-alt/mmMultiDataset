@@ -16,7 +16,7 @@ The release of this dataset addresses a critical gap in HAR systems concerning t
 
 ### Sample Naming Format
 - **Single-user actions:**  
-  $P_{i}-action-cnt.npz$$
+  $P_{i}-action-cnt.npz$
 - **Multi-user independent actions:**  
   $P_{i}^1,P_{i}^2-action1,action2-cnt.npz$
 - **Multi-user interaction actions:**  
