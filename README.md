@@ -1,10 +1,14 @@
-# mmMultiDataset
 
---- 
+# mmMultiDataset
+---
 
 Human Activity Recognition (HAR) technology is vital in fields such as healthcare, elder care, security monitoring, and human-computer interaction. Its effectiveness largely relies on accurate sensor data collection. Millimeter wave (mmWave) radar stands out in HAR applications due to its ability to penetrate non-metallic materials and deliver high-resolution sensing. However, traditional HAR methods utilizing point cloud data from sensors like LiDAR or mmWave face significant challenges when recognizing multiple independent activities or interactions among several individuals.
 
 To tackle these challenges, we present the mmMultiDataset, an innovative dataset designed to capture both macro and micro human movements in multi-person environments. This dataset records 11 distinct activities performed by seven subjects across three different settings, encompassing not only single-user actions but also scenarios involving multiple participants.
+
+### Multi-user Activities
+- **Independent Actions:** Includes activities such as L, S, O, V, W, and Z.
+- **Interactive Actions:** Includes activities such as wave, high-five, kick, push, and shake hands.
 
 The mmMultiDataset is organized in point cloud format, with each activity meticulously segmented into individual samples for ease of use by researchers. Data collection was conducted in controlled environments to ensure accuracy and reliability, covering a broad spectrum of scenarios, from single-user to multi-user activities.
 
@@ -12,7 +16,7 @@ The release of this dataset addresses a critical gap in HAR systems concerning t
 
 ### Sample Naming Format
 - **Single-user actions:**  
-  $P_{i}-action-cnt.npz$
+  $P_{i}-action-cnt.npz$$
 - **Multi-user independent actions:**  
   $P_{i}^1,P_{i}^2-action1,action2-cnt.npz$
 - **Multi-user interaction actions:**  
